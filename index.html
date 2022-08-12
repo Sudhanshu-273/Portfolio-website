@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhanshu.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/00cc61fd4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- ************ Header *********  -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/mylogo.jpg" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer / Problem Solving</p>
+                <h1>Hi, I'm <span>Sudhanshu</span><br>Chaubey from INDIA</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************** about ********** -->
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid commodi quas error ratione.
+                        Iste animi aliquam architecto nam repellendus officia quas voluptas quidem debitis tenetur
+                        veniam doloremque eos asperiores, ipsum quo provident autem consequuntur odio reiciendis quaerat
+                        mollitia vel cumque, veritatis fugiat. Libero, quam voluptates esse harum expedita omnis
+                        sapiente.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Deigning Web Apps</li>
+                            <li><span>Problem Solving</span><br>Problem Solving on HackerRank</li>
+                            <li><span>Competitive Programming</span><br>Competitive Programming on various platforms.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>Currently working on myself</p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2024 (Current)</span><br>Bachelor of Technology<br>Computer Science And
+                                Enginering<br>Kamla Nehru Institute of Technology, Sultanpur, Uttar Pradesh</li>
+                            <li><span>2007 - 2019</span><br>Intermediate<br>Divine Public School, Gorakhpur, Uttar
+                                Pradesh</li>
+                            <li><span>Graphic Designing</span><br>Deigning Web Apps</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!-- ********** Sevices *********  -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis quam nulla dolorum ipsa tempore, repellendus unde debitis eius iste.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Problem Solver</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis quam nulla dolorum ipsa tempore, repellendus unde debitis eius iste.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Competitive Programmer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nobis quam nulla dolorum ipsa tempore, repellendus unde debitis eius iste.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ********* portfolio ********* -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontetnts = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontetnt of tabcontetnts) {
+                tabcontetnt.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+
+</html>
